@@ -25,6 +25,7 @@ def send(state, message, dest):
 
 
 def send_all(state, message):
+    clock_increment()
     for i in range(size):
         send(state=state, message=message, dest=i)
 
